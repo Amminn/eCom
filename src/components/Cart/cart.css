@@ -1,0 +1,19 @@
+.cart {
+  /* padding: 1.3rem; */
+  position: relative;
+}
+
+.counter {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: white;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
