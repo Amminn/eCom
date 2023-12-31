@@ -9,17 +9,17 @@ html {
   font-size: 10px; /* 10xp == 1rem */
 }
 
-body {
+/* body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
+} */
 
 img {
   display: inline-block;
   max-width: 100%;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 a {
@@ -63,4 +63,57 @@ footer {
 
 .error {
   color: red;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  row-gap: 4rem;
+}
+
+.loading-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  font-size: 5rem;
+}
+
+.wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.wrapper img {
+  width: 300px;
+}
+
+.wrapper .description {
+  font-size: 1.6rem;
+  margin-bottom: 3.5rem;
+}
+
+.wrapper .information .review {
+  margin-bottom: 2rem;
+}
+
+.wrapper .information .review h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.wrapper .information .review p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
