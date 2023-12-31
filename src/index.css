@@ -11,6 +11,8 @@ html {
 
 body {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -52,4 +54,13 @@ header nav {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+}
+
+footer {
+  padding: 3rem;
+  text-align: center;
+}
+
+.error {
+  color: red;
 }
