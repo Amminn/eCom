@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import "./cart.css";
 
 function Cart() {
-  const { count, setCount, cartProducts } = useContext(MyContext);
+  const { cartProducts } = useContext(MyContext);
   const navigate = useNavigate()
   // console.log(cartProducts)
 

@@ -6,7 +6,8 @@ function CheckoutSuccessPage() {
     <div className="container">
       <div className="checkout-success-page">
         <h1 className="checkout-success-page__title">
-          CheckoutSuccessPage
+          aye, top of the <br />
+          morning to you laddie
         </h1>
         <Link className="checkout-success-page__link" to="/">Go back Home</Link>
       </div>

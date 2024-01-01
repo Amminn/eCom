@@ -72,6 +72,7 @@ footer {
 }
 
 .products {
+  padding-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -235,4 +236,41 @@ footer {
 }
 .checkout-success-page__link {
   font-size: 1.5rem;;
+}
+
+/* contact us */
+
+.contact-us {
+  margin-top: 6rem;
+}
+
+.contact-us h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+
+form {
+  width: 400px;
+  margin-inline: auto;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  font-size: 1.5rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  /* margin-bottom: 1rem; */
+}
+
+form button {
+  width: 100%;
+  padding-block: 0.4rem;
 }
