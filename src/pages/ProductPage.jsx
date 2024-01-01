@@ -4,6 +4,7 @@ import { Rating } from '@mui/material';
 import Tags from '../components/Tags/index.jsx';
 import { renderDiscount, calculateAverageRating } from '../utils/utils.jsx';
 import { MyContext } from '../App';
+import { Link } from 'react-router-dom';
 
 function ProductPage() {
   const { id } = useParams();
@@ -47,6 +48,7 @@ function ProductPage() {
   return (
     <div className="productPage">
       <div className="container">
+        <Link className="goback" to="..">← Go back</Link>
         {loading && (
           <div className="loading-wrapper">
             <h2 className="loading">Loading...</h2>

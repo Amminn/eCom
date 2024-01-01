@@ -7,6 +7,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProductPage from "./pages/ProductPage";
 import CheckoutPage from "./pages/CheckoutPage";
+import CheckoutSuccessPage from "./pages/CheckoutSuccessPage";
 
 const MyContext = createContext();
 
@@ -22,6 +23,7 @@ function App() {
             <Route index element={<Home />} /> {/* Removed value prop */}
             <Route path="product/:id" element={<ProductPage />} />
             <Route path="checkoutPage" element={<CheckoutPage />} />
+            <Route path="success" element={<CheckoutSuccessPage />} />
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
