@@ -59,28 +59,32 @@ export default function Home(props) {
         </div>
       }
       <div className="products">
-        <Autocomplete
-          disablePortal
-          id="combo-box-demo"
-          options={products.map((product) => ({
-            id: product.id,
-            title: product.title.toString(),
-          }))}
-          getOptionLabel={(option) => option.title.toString()}
-          renderOption={(props, option) => (
-            <li {...props} key={`${option.id}`}>
-              {option.title}
-            </li>
-          )}
-          sx={{
-            width: '100%',
-            typography: 'body2',
-            fontSize: 20,
-          }}
-          renderInput={(params) => <TextField {...params} label="Title" />}
-          filterOptions={(options, state) => options} // Disable default filtering behavior
-          onInputChange={handleFilterChange} // Handle manual filtering
-        />
+      <Autocomplete
+        disablePortal
+        id="combo-box-demo"
+        options={products.map((product) => ({
+          id: product.id,
+          title: product.title.toString(),
+        }))}
+        getOptionLabel={(option) => option.title.toString()}
+        renderOption={(props, option) => (
+          <li {...props} key={`${option.id}`}>
+            {option.title}
+          </li>
+        )}
+        sx={{
+          width: '100%',
+          fontSize: 20,
+        }}
+        renderInput={(params) => <TextField {...params} label="Title" />}
+        filterOptions={(options, state) => {
+          const inputValue = state.inputValue.toLowerCase();
+          return options.filter(option =>
+            option.title.toLowerCase().includes(inputValue)
+          );
+        }}
+        onInputChange={handleFilterChange}
+      />
         {productsRender}
       </div>
       <hr />
